@@ -3,8 +3,6 @@ title: Home
 layout: default
 ---
 
-## Description
-
 Think of ConstantCrawl as a more complete version of the [Internet
 Archive](http://archive.org/) stored on [Freenet](https://freenetproject.org/)
 and accessible through your browser. ConstantCrawl keeps a copy of every page
