@@ -20,9 +20,9 @@ end
 
 desc "Prep deploy to github pages"
 task :deploy => :generate do
-  Dir['_deploy/*'].each { |f| rm_rf(f) }
-  cp_r '_site/.', '_deploy'
-  cd '_deploy' do
+  Dir['_build/*'].each { |f| rm_rf(f) }
+  cp_r '_site/.', '_build'
+  cd '_build' do
     system "git checkout CNAME"
     system "git add ."
     system "git add -u"
