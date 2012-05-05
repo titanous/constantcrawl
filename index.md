@@ -22,7 +22,7 @@ available in real-time.
 
 DDoS attacks and traffic spikes don't make sites unavailable. When you try to
 reach a site that's unresponsive, ConstantCrawl finds the most recent cached copy
-on the network and loads it instead. If a page loaded for anyone it loaded for
+on the network and loads it instead. If a page loaded for anyone it loads for
 everyone.
 
 
