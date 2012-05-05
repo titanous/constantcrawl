@@ -51,3 +51,6 @@ as well.
 ## Status
 
 ConstantCrawl is currently in development.
+
+A project by [@danielsiders](https://twitter.com/danielsiders) and
+[@titanous](https://twitter.com/titanous).
