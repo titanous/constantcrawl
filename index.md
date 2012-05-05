@@ -50,7 +50,4 @@ as well.
 
 ## Status
 
-ConstantCrawl is in active development.
-
-If you'd like to contribute, join the discussion on
-[Github](https://github.com/titanous/constantcrawl).
+ConstantCrawl is currently in development.
