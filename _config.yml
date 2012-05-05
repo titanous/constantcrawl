@@ -1,0 +1,3 @@
+title: ConstantCrawl
+subtitle: A distributed real-time cache of the internet
+exclude: Gemfile, Gemfile.lock

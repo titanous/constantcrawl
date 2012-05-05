@@ -1,0 +1,222 @@
+---
+---
+
+@import compass/reset
+@import compass/utilities
+@import fonts
+@import syntax
+
+// BEGIN Variables
+
+$grid_columns: 11
+@import grid-coordinates
+
+$background: #141414
+$foreground: #f8f8f8
+$light-grey: #8a8a8a
+$dark-grey:  #434343
+$red:        #cf6a4c
+$blue:       #7587a6
+$green:      #8f9d6a
+
+// END Variables
+
+
+// BEGIN General Elements
+
+body
+  color: $foreground
+  background-color: $background
+  font-family: 'Museo Sans 500', sans-serif
+  line-height: 1.5
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+p
+  font-size: 16px
+  margin: 24px 0
+
+h1, h2, h3
+  color: white
+
+h1
+  font-size: 33px
+  font-family: 'Museo Sans 700'
+  margin-bottom: 24px
+
+h2
+  font-size: 24px
+  margin-bottom: -12px
+
+h3
+  font-size: 16px
+  font-family: 'Museo Sans 700'
+  margin-top: 24px
+  margin-bottom: -24px
+
+a
+  +link-colors($red, $blue, $dark-grey, $red, $red)
+  text-decoration: none
+
+em, i
+  font-family: 'Museo Sans 500 Italic', sans-serif
+
+strong, b
+  font-family: 'Museo Sans 700', sans-serif
+  color: #fff
+
+small, sub, sup
+  font-size: 80%
+
+sup, sup
+  line-height: 0
+
+sup
+  vertical-align: super
+
+sub
+  vertical-align: bottom
+
+dt
+  font-family: 'Museo Sans 700', sans-serif
+
+dd
+  padding-left: 5px
+
+mark
+  background-color: $blue
+
+blockquote
+  padding: 0 30px
+  position: relative
+  &:before, &:after
+    font-size: 400%
+  &:before
+    content: "\201c"
+    left: 0
+    top: -24px
+    position: absolute
+  cite
+    display: block
+    text-align: right
+    margin-top: -24px
+    font-family: 'Museo Sans 500 Italic', sans-serif
+    &:before
+      content: "\2014\00a0"
+
+article
+  ul, ol
+    padding-left: 1em
+    text-indent: -1em
+  ul li:before
+    content: "\00BB\00a0\00a0"
+  ol
+    counter-reset: item -1
+    li:before
+      counter-increment: item
+      content: counter(item) ".\00a0\00a0" 
+  .footnotes ol
+    list-style: inside decimal
+    li:before
+      content: ''
+
+  tbody td
+    border-top: 1px solid $light-grey
+    border-bottom: 1px solid $light-grey
+  td, th
+    border-left: 1px solid $light-grey
+    padding: 0 5px
+    line-height: 1.49
+    &:first-child
+      border-left: none
+  thead
+    font-family: 'Museo Sans 700', sans-serif
+  tfoot
+    font-family: 'Museo Sans 500 Italic', sans-serif
+
+abbr[title], dfn[title]
+  border-bottom: 1px dotted $light-grey
+  cursor: help
+
+hr
+  border: none
+  border-top: 1px dotted $light-grey
+  margin-top: -1px
+  width: 90%
+
+code, kbd, samp, var
+  font-family: 'Droid Sans Mono', monospace
+  letter-spacing: -1px
+  color: $light-grey
+
+pre
+  font-family: 'Droid Sans Mono', monospace
+  color: $foreground
+  padding-left: 11px
+  overflow: auto
+
+pre, ul, ol, dl, table
+  margin: 24px 0
+
+header, #content, footer
+  +grid-container
+  overflow: visible
+
+footer
+  clear: both
+  font-size: 12px
+  text-align: center
+  border-top: 1px solid $light-grey
+  margin-bottom: 20px
+  padding-top: 10px
+
+// END General elements
+
+
+// BEGIN Header
+
+header
+  display: block
+  border-bottom: 1px solid $light-grey
+  height: 56px
+  h1
+    float: left
+    font-family: 'Museo 700', serif
+    font-size: 30px
+    margin-bottom: 0
+    margin-top: 16px
+  h2
+    float: right
+    margin-top: 22px
+  nav ul
+    +horizontal-list(15px)
+    float: right
+    margin-top: 23px
+    overflow: visible
+    position: relative
+    li
+      border-right: 1px solid $light-grey
+      font-family: 'Museo 500'
+      font-size: 22px
+      &:last-child
+        border-right: none
+
+// END Header
+
+
+// BEGIN Article
+
+article
+  margin-top: 30px
+  +grid(7)
+
+// END Article
+
+
+// BEGIN Page specific
+
+._ h1
+  font-size: 49px
+  text-align: center
+
+// END Page specific
